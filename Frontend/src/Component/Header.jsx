@@ -1,4 +1,4 @@
-
+ 
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Header.css';
@@ -27,11 +27,11 @@ function Header() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 0.5 }}
             whileHover={{ color: '#FFD700', scale: 1.1 }}
-            style={{ display: 'block', fontSize: '4rem', fontWeight: 'bold', textShadow: '5px 5px 15px rgba(255, 20, 20, 0.8)', animation: 'pulse 3s infinite' }}
+            style={{ display: 'block', fontSize: '3.5rem', fontWeight: 'bold', textShadow: '5px 5px 15px rgba(255, 20, 20, 0.8)', animation: 'pulse 3s infinite' }}
           >
             <TypeAnimation
               sequence={['PUSH LIMITS', 2500, 'BREAK BARRIERS', 2500, 'ACHIEVE GREATNESS', 2500]}
-              speed={40}
+              speed={30}
               repeat={Infinity}
             />
           </motion.span> 

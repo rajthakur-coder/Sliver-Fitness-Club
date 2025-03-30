@@ -49,7 +49,7 @@ const Chatbot = () => {
     <>
       {/* Floating Chatbot Button */}
       <div className="chatbot-button" onClick={() => setIsOpen(!isOpen)}>
-        💬
+       CHAT US 💬
       </div>
 
       {/* Chatbot Popup */}
