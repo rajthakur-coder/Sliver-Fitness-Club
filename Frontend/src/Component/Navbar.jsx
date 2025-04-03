@@ -38,8 +38,9 @@ function Navbar() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         whileHover={{ scale: 1.2, rotate: 3 }}
+        
       >
-        Silver <span>Fitness</span>
+      <Link to="main"> Silver <span>Fitness</span></Link> 
       </motion.div>
 
       {/* Mobile Menu Icon */}

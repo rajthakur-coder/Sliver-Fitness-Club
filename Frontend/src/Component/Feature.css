@@ -1,6 +1,6 @@
 .features {
     text-align: center;
-    padding: 80px 20px;
+    padding: 60px 20px;
     background: #111; 
     color: #fff; 
   }
@@ -26,7 +26,7 @@
     background: rgba(255, 255, 255, 0.1); 
     padding: 20px;
     border-radius: 10px;
-    width: 250px;
+    width: 300px;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s;
     cursor: pointer;
@@ -38,7 +38,7 @@
   }
   
   .feature-box img {
-    width: 200px;
+    width: 250px;
     height: 170px;
     margin-bottom: 10px;
 
