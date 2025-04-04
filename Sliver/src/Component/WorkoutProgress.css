@@ -1,0 +1,180 @@
+/* 🌟 Workout Container - Futuristic Glassmorphism 3D Effect */
+.workout-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    animation: glowPulse 3s infinite alternate;
+}
+
+/* Neon Glow Animation */
+@keyframes glowPulse {
+    0% { box-shadow: 0px 10px 30px rgba(0, 255, 255, 0.5); }
+    100% { box-shadow: 0px 15px 40px rgba(0, 255, 255, 0.8); }
+}
+
+/* Hover Effect for 3D Depth */
+.workout-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 20px 50px rgba(0, 255, 255, 0.7);
+}
+
+/* 🏆 Title Styling with Neon Effect */
+.workout-container h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #00ffcc;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px #00ffcc;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    animation: flicker 1.5s infinite alternate;
+}
+
+/* Flickering Effect */
+@keyframes flicker {
+    0% { opacity: 1; text-shadow: 0 0 20px #00ffcc; }
+    100% { opacity: 0.8; text-shadow: 0 0 30px #00aaff; }
+}
+
+/* 🔤 Input Fields - Sci-Fi Glass Input */
+.workout-input {
+    width: 100%;
+    max-width: 350px;
+    padding: 16px;
+    font-size: 17px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    margin-top: 15px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.workout-input:focus {
+    border-bottom: 3px solid #00ffcc;
+    transform: scale(1.05);
+}
+
+/* 📸 Upload Button with Wave Effect */
+.upload-label {
+    display: block; /* Block kar diya taaki width handle ho */
+    background: linear-gradient(135deg, #ff007f, #ffcc00);
+    padding: 14px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 20px auto; /* Auto margin se center ho jayega */
+    box-shadow: 0 0 15px rgba(255, 0, 120, 0.6);
+    max-width: 300px; /* Mobile pe overflow nahi hoga */
+    text-align: center;
+}
+
+.upload-label:hover {
+    background: linear-gradient(135deg, #ffcc00, #ff007f);
+    transform: scale(1.08);
+    box-shadow: 0px 0px 18px rgba(255, 0, 120, 0.8);
+}
+
+/* 🎯 Image Preview with Glow */
+.workout-preview {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 16px;
+    margin-top: 15px;
+    box-shadow: 0px 6px 20px rgba(0, 255, 204, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.workout-preview:hover {
+    transform: scale(1.1);
+}
+
+/* 🚀 Animated Add Workout Button */
+.workout-button {
+    background: linear-gradient(135deg, #00ffcc, #00aaff);
+    color: white;
+    padding: 15px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+    width: 100%;
+    max-width: 350px;
+}
+
+.workout-button:hover {
+    background: linear-gradient(135deg, #00aaff, #00ffcc);
+    transform: scale(1.07);
+    box-shadow: 0px 6px 20px rgba(0, 255, 204, 0.7);
+}
+
+/* 🏋️‍♂️ Workout Card with Parallax Effect */
+.workout-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 18px;
+    border-radius: 16px;
+    margin-top: 14px;
+    margin: 14px 20px;
+    box-shadow: 0px 6px 14px rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s ease-in-out;
+}
+.workout-card:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
+
+/* 📷 Capture Button with Neon Pulse */
+.capture-btn {
+    background: linear-gradient(135deg, #ffcc00, #ff8800);
+    color: white;
+    padding: 15px 22px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: all 0.3s ease-in-out;
+    animation: neonPulse 2s infinite alternate;
+    width: 100%;
+    max-width: 350px;
+}
+
+.capture-btn:hover {
+    background: linear-gradient(135deg, #ff8800, #ffcc00);
+    transform: scale(1.07);
+    box-shadow: 0px 6px 20px rgba(255, 204, 0, 0.7);
+}
+
+/* 📱 Responsive Enhancements */
+@media (max-width: 600px) {
+    .workout-container { width: 92%; padding: 24px; }
+    .workout-input { width: 100%; }
+    .workout-preview { max-width: 250px; }
+    .workout-button, .capture-btn { padding: 13px 18px; font-size: 16px; }
+    .upload-label { margin: 20px 20px 0px 0px; } 
+    .upload-label {
+        max-width: 250px; /* Chhoti screen pe aur compact */
+    }
+}
+
+@media (max-width: 400px) {
+    .workout-container { width: 100%; padding: 10px; }
+    .workout-input { width: 100%; }
+    .workout-preview { max-width: 250px; }
+    .workout-button, .capture-btn { padding: 13px 18px; font-size: 16px; }
+}

@@ -1,0 +1,139 @@
+
+#about {
+    background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+    color: #fff;
+    padding: 140px 10%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.about-image img {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(255, 215, 0, 0.3);
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0px 15px 40px rgba(255, 215, 0, 0.6);
+}
+
+
+.about-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #FFD700;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.about-content h2::after {
+    content: "";
+    width: 50%;
+    height: 4px;
+    background: #FFD700;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    animation: underline-grow 1s ease-out forwards;
+}
+
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+
+.about-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e1e1e;
+    background: #FFD700;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.about-btn:hover {
+    background: #fff;
+    color: #1e1e1e;
+    transform: scale(1.1);
+}
+
+
+@keyframes underline-grow {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+    .about-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .about-content h2 {
+        font-size: 2rem;
+    }
+    .about-content h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .about-content p {
+        font-size: 1rem;
+    }
+    .about-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    #about {
+        padding: 60px 5%;
+    }
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+    .about-content p {
+        font-size: 0.9rem;
+    }
+    .about-btn {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}
