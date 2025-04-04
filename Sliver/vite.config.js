@@ -6,4 +6,7 @@ export default defineConfig({
   server: {
     port: 3000, // Optional: Port set karne ke liye
   },
+  build: {
+    chunkSizeWarningLimit: 1000, // Default 500 hota hai, ise increase kar sakte ho
+  },
 });
