@@ -3,9 +3,18 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Header.css';
 import { TypeAnimation } from 'react-type-animation';
+import Feature from './Feature';
+import Ourservice from './Ourservice';
+import Offer from './Offer';
+import Pricing from './Pricing';
+import ClientReviews from './ClientReviews';
+import About from './About';
+import Contact from './Contact';
+import { Route, Router, Routes } from 'react-router-dom';
 
 function Header() {
   return (
+    <>
     <div id="main">
       <motion.div 
         className="name"
@@ -70,6 +79,14 @@ function Header() {
         </motion.div>
       </motion.div>
     </div>
+    <Feature/>
+    <Ourservice/>
+    <Offer/>
+    <Pricing/>
+    <ClientReviews/>
+    <About/>
+    <Contact/>
+   </>
   );
 }
 

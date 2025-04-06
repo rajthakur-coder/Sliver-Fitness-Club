@@ -31,14 +31,15 @@
 }
 
 .offer-container h1 {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #ffcc00;
+   
+    font-size: 42px ; 
+    font-weight: bold ;
+    margin-bottom: 20px ;
+    color: #ffcc00 ;
 }
 
 .offer-container h1 span {
-    color: red;
+    color: red ;
 }
 
 .offer-details {
@@ -72,7 +73,7 @@
     }
     
     .offer-container h1 {
-        font-size: 32px; 
+        font-size: 32px ; 
     }
 
     .offer-details {
@@ -87,7 +88,7 @@
 
 @media (max-width: 480px) {
     .offer-container h1 {
-        font-size: 28px; 
+        font-size: 28px ; 
     }
 
     .offer-btn {

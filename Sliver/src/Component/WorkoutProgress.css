@@ -1,8 +1,8 @@
 /* 🌟 Workout Container - Futuristic Glassmorphism 3D Effect */
 .workout-container {
     max-width: 600px;
-    margin: 50px auto;
-    padding: 35px;
+    margin: 5px auto;
+    padding: 25px;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     border-radius: 20px;

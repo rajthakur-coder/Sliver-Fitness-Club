@@ -15,22 +15,38 @@
     max-width: 440px;
     border-radius: 10px;
   }
-  
-/* Layout & Positioning */
-.fac {
+
+.head{
+    color: greenyellow; /* Simple white or choose any soft color like #ccc, #f0f0f0 */
+    margin-top: 100px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: none; /* 🔥 Removed neon glow */
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: none;
+  }
+  
+/* Layout & Positioning */
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+     gap: 20px;
     padding: 20px;
+
 }
 
 /* Sci-Fi Glassmorphism Container */
 .facebook-feed-container {
     width: 90%;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 10px auto  auto;
     padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(25px);
@@ -150,16 +166,22 @@
 
 /* Mobile & Tablet Responsiveness */
 @media screen and (max-width: 768px) {
-    .fac {
+    .social{
         flex-direction: column;
-        gap: 15px;
+        gap: 25px;
+      
     }
     .facebook-feed-container {
         width: 95%;
         padding: 18px;
+        
     }
     .facebook-iframe {
         height: 400px;
+    }
+    .head{
+        font-size: 40px;
+        text-align: center;
     }
 }
 
@@ -172,5 +194,9 @@
     }
     .facebook-feed-container h2 {
         font-size: 24px;
+    }
+    .head{
+        font-size: 30px;
+        text-align: center;
     }
 }

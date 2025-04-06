@@ -28,13 +28,16 @@ function CalorieTracker() {
   };
 
   return (
+    <div>
+    <h1 id="h1">Calorie Tracker </h1>
     <div className="scan">
+       
       <motion.div
         className="tracker-container"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h2>Calorie & Nutrition Tracker 🍏</h2>
+        <h2>Calorie & Nutrition Tracker </h2>
 
         <input
           type="text"
@@ -61,6 +64,7 @@ function CalorieTracker() {
         </div>
       </motion.div>
       <ScanCalorie />
+    </div>
     </div>
   );
 }

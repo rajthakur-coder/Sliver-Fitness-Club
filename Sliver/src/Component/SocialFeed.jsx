@@ -5,9 +5,12 @@ import sanu from '../images/sanu.jpg';
 
 const SocialFeed = () => {
   return (
-    <div className="fac">
+    <>
+    <h1 className="head"> Workout Progress check</h1>
+    <div className="social">
+     
       <div className="facebook-feed-container">
-        <h2></h2>
+       
 
         {/* ✅ Image Added */}
         <img 
@@ -19,6 +22,7 @@ const SocialFeed = () => {
       </div>
       <CaptureAndShare/>
     </div>
+    </>
   );
 };
 
