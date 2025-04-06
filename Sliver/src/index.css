@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #000000;
     font-family: 'Lato', sans-serif;
-   
    
 }
 
@@ -17,7 +14,19 @@ body {
     box-sizing: border-box;
 }
 
-html {
+/* index.css or App.css */
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
   }
+
+
+  /* img, iframe, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  } */
+  
 
