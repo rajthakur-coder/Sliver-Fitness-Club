@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom"; // ✅ Changed from 'react-scroll'
 import facebook from '../images/facebook.png';
 import instagram from '../images/instagram.jpg';
 import youtube from '../images/youtube.png';
@@ -20,12 +20,12 @@ function Footer() {
         <div className="footer-section links">
           <h3 className="fade-in">Quick Links</h3>
           <ul className="fade-in">
-            <li><Link to="main" smooth={true} duration={1000}>Home</Link></li>
-            <li><Link to="features" smooth={true} duration={1000}>Features</Link></li>
-            <li><Link to="services-section" smooth={true} duration={1000}>Services</Link></li>
-            <li><Link to="pricing" smooth={true} duration={1000}>MemberShip</Link></li>
-            <li><Link to="about" smooth={true} duration={1000}>About</Link></li>
-            <li><Link to="contact" smooth={true} duration={1000}>Contact</Link></li>
+            <li><Link to="/Home">Home</Link></li>
+            <li><Link to="/features">Features</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/pricing">Membership</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
