@@ -35,7 +35,7 @@
 .social {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
+    scroll-behavior: smooth;
     justify-content: center;
      gap: 20px;
     padding: 20px;

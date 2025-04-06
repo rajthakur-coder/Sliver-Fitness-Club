@@ -22,6 +22,7 @@ const Chatbot = lazy(() => import("./Component/ChatBot.jsx"));
 
 function App() {
    return (
+      <div className="App">
       <Router>
          <ScrollToTop />
          <Navbar />
@@ -29,9 +30,9 @@ function App() {
          <Suspense fallback={<p>Loading...</p>}>
             <Routes>
                {/* 🏠 Home Page */}
-               <Route path="/Home" element={<Header /> } />
+               <Route path="" element={<Header /> } />
                 {/* 📌 Individual Pages */}
-               <Route path="/main" element={<Header />} />
+               <Route path="/Home" element={<Header />} />
                <Route path="/features" element={<Feature />} />
                <Route path="/services" element={<Ourservice />} />
                <Route path="/offer" element={<Offer />} />
@@ -53,6 +54,7 @@ function App() {
          <Footer />
          <Chatbot />
       </Router>
+      </div>
    );
 }
 

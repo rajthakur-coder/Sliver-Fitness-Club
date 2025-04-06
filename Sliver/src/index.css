@@ -6,9 +6,18 @@ body {
     background-color: #000000;
     font-family: 'Lato', sans-serif;
    
+   
+}
+
+.App{
+  min-height: 100vh;
 }
 
 * {
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
