@@ -27,7 +27,7 @@ const Chatbot = () => {
       if (input.toLowerCase().includes("तुम्हारा नाम क्या है") || input.toLowerCase().includes("your name")) {
         botReply = "मेरा नाम Imran है।";
       } else {
-        const response = await axios.post("https://gym-website-backhand.onrender.com", { message: input });
+        const response = await axios.post("https://gym-website-backhand.onrender.com/chat", { message: input });
         botReply = response.data.reply || "Sorry, I couldn't process that.";
         botReply = shortenResponse(cleanResponse(botReply));
       }
