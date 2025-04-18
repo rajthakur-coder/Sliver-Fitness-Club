@@ -15,6 +15,12 @@ if (!GEMINI_API_KEY) {
   process.exit(1);
 }
 
+
+app.get('/', (req, res) => {
+  res.send("API working fine on Render!");
+});
+
+
 // AI Chat Endpoint for Gym-related Queries
 app.post("/chat", async (req, res) => {
   try {
