@@ -7,5 +7,9 @@
     "express-rate-limit": "^7.5.0",
     "install": "^0.13.0",
     "react-type-animation": "^3.2.0"
-  }
+  },
+  "scripts": {
+  "start": "node server.js"
+}
+
 }
